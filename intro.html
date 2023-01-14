@@ -93,7 +93,7 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="_static/octocat.svg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">GitHubガイド</h1>
@@ -273,12 +273,46 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   GitHubガイドについて
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   目次
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   本ドキュメントの管理について
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -290,6 +324,29 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   GitHubガイドについて
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   目次
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   本ドキュメントの管理について
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -301,15 +358,22 @@ title="Print to PDF"
 <h1>GitHubガイドについて<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h1>
 <p>この文書は、GitHub(等)を用いたリモートブランチ開発を行うための初歩を取り扱います。
 必ず自分で操作をし、練習するようにしてください。</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>目次<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="setup/index.html">GitHub 利用の準備</a></li>
 </ul>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>本ドキュメントの管理について<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h1>
 <p>なおこのドキュメント自体もGitHubおよびGitHub Actionsで管理されています。</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/kd-it/github-book">kd-it/github-book</a></p></li>
 </ul>
+<p>mainブランチにマージされた時に自動ビルドで更新される仕組みになっています。</p>
 </section>
 
     <script type="text/x-thebe-config">
