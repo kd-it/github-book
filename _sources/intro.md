@@ -5,3 +5,8 @@
 
 ```{tableofcontents}
 ```
+
+なおこのドキュメント自体もGitHubおよびGitHub Actionsで管理されています。
+
+- [kd-it/github-book](https://github.com/kd-it/github-book)
+

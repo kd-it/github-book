@@ -25,7 +25,7 @@ GitHubアカウントは無料ですが、有料プラン(上位プラン)が存
 - [Pricing](https://github.com/pricing)
 
 また、個人向けであればProアカウントがあり、こちらは学生であれば2年単位(学生であれば更新可能)で無料で切り替えることができます。
-仮想マシンのレンタル時間向上(120hour/core/month → 180hour/core/month)などのメリットもあるので、切り替えにチャレンジしてみるのも良いでしょう。ネット上で切り替え手順の日本語での紹介等があるので、検索してみてください。
+仮想マシンのレンタル時間向上(月あたり 120時間/コア → 180時間/コア)などのメリットもあるので、切り替えにチャレンジしてみるのも良いでしょう。ネット上で切り替え手順の日本語での紹介等があるので、検索してみてください。
 
 - [GitHub pro](https://docs.github.com/en/get-started/learning-about-github/githubs-products#github-pro)
 - [GitHub Education](https://education.github.com/benefits/offers)
