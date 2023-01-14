@@ -1,0 +1,5 @@
+version: '3'
+
+services:
+  server:
+    command: sphinx-autobuild --delay 3 --host 0.0.0.0 . _build

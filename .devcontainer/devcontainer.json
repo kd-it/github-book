@@ -1,0 +1,19 @@
+{
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "server",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "shd101wyy.markdown-preview-enhanced",
+                "donjayamanne.githistory",
+                "oderwat.indent-rainbow",
+                "2gua.rainbow-brackets",
+                "TatsuyaNakamori.resttext",
+                "leonhard-s.python-sphinx-highlight",
+                "masakit.zenkaku-hankaku",
+                "mosapride.zenkaku"
+            ]
+        }
+    }
+}
