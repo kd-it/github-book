@@ -295,9 +295,43 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   必要な環境
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   GitHub 利用の準備
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     必要な環境
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   GitHubアカウントの作成
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git">
+   Gitコマンドのインストール
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows11winget">
+     Windows11のwingetによるインストール
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#macosbrew">
+     macOSのbrewによるインストール
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-cli">
+   オプショナル: GitHub CLIのインストール
   </a>
  </li>
 </ul>
@@ -319,9 +353,43 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   必要な環境
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   GitHub 利用の準備
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     必要な環境
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   GitHubアカウントの作成
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git">
+   Gitコマンドのインストール
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows11winget">
+     Windows11のwingetによるインストール
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#macosbrew">
+     macOSのbrewによるインストール
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-cli">
+   オプショナル: GitHub CLIのインストール
   </a>
  </li>
 </ul>
@@ -370,6 +438,96 @@ title="Print to PDF"
 </ul>
 </div>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>GitHubアカウントの作成<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h1>
+<p>まずブラウザで、<a class="reference external" href="https://github.com/">GitHub</a>にアクセスしてください。</p>
+<p><img alt="" src="../_images/01-github-top.png" /></p>
+<p>少し下にスクロールすると、メールアドレスを入力して開始する事ができるので、
+自分のメールアドレスを入力してください。</p>
+<p><img alt="" src="../_images/02-github-email.png" /></p>
+<p>学校の授業で使うものですので、できる限り学校での自分のメールアドレスを渡すようにしてください。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>手入力をすると、入力を間違えてしまうことがかなりあるので、メールのアプリなどから <strong>自分のメールアドレスをコピペして入れる</strong> ようにしましょう。
+ここで間違えると後で面倒なことになります。</p>
+</div>
+<p>入力後 “Sign up for GitHub” を押すことで、次の手順に進めます。</p>
+<p>まずメールアドレスの確認が出るので、確認して次へ進めましょう。</p>
+<p><img alt="" src="../_images/03-github-mailcheck.png" /></p>
+<p>続いて、パスワードを決めるよう促されます、適当に決めてください(忘れないようにすること)。
+このとき入力したパスワードの強度が示されるので、 <strong>strong</strong> と判定される程度には難しいものにしてください。</p>
+<p><img alt="" src="../_images/04-github-passcheck.png" /></p>
+<p>そして、GitHub上で使われるユーザー名(他の人に見えます)を設定します。
+重複して使えない場合はその旨が出ますので、ほかのユーザーとぶつからないものにしましょう。</p>
+<p><img alt="" src="../_images/05-github-username.png" /></p>
+<p>既に使われている場合は、”not available”と出ています。
+<img alt="既に使われている場合" src="../_images/06-github-username-failed.png" /></p>
+<p>利用可能であれば、”available”と出ています、こちらになるように決めてください。
+<img alt="使用可能な場合" src="../_images/07-github-username-ok.png" /></p>
+<p>サービスの更新情報などをメールで送って良いかを求めてきます。
+任意ですのでy/nお好みで入れてすすめてください。
+<img alt="" src="../_images/08-github-mailinfo.png" /></p>
+<p>『検証する』のボタンの後、人間の入力である(ボット入力ではない)ことの確認が行われるのでがんばって解いてください。
+<img alt="" src="../_images/09-github-recapcha.png" /></p>
+<p>無事通過できれば、アカウント作成が可能になるので、”Create account”ですすめてください。
+<img alt="" src="../_images/10-github-recapcha-ok.png" /></p>
+<p>ここで登録したアドレスにメールが届いていることをチェックしてきてください。
+届いているメールに確認用のコードが入っています。
+<img alt="" src="../_images/11-github-mailcheck.png" /></p>
+<p><img alt="" src="../_images/12-github-code.png" /></p>
+<p>コードを渡すことにより、メールアドレスの(疎通)確認が完了します。
+その後パーソナライズ用の質問がいくつか続くかと思いますが、無いようにしたがって進めてもかまいませんし、下にあるskipで飛ばしてもらってもかまいません。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>このとき、なぜか”flagged”とされることがあります。
+というかこの記事を作っているときにやられました。</p>
+<p><img alt="" src="../_images/13-github-flagged.png" /></p>
+<p>なぜなったのかというのは利用者である私たちの側からではわからない事が多いと思います。
+この場合は、<a class="reference external" href="https://github.com/contact">Contact Support</a>にて問い合わせをして解除してもらう必要があります。</p>
+<p>解除方法の先駆者のサイトもありますので、こちらの例文を参考に送ってみると良いでしょう。</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ekulabo.com/github-account-flagged">GitHubでアラート! Your account has been flaggedが表示されたよ – エクスプラボ</a></p></li>
+<li><p><a class="reference external" href="https://support.github.com/contact/account">リクエスト送信先(アカウント - GitHub)</a></p></li>
+</ul>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="git">
+<h1>Gitコマンドのインストール<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Gitコマンドをインストール済みであればこの部分はスキップできます。</p>
+</div>
+<p>Gitの操作を行う上で、必ず必要になるGitコマンドをインストールしておきます。</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/">Git</a></p></li>
+</ul>
+<p>こちらで自分の使っているOS版のGitのインストーラーをダウンロードしてインストールしてください。
+ただし、インストーラー経由よりも、各OSの持つツールで入れた方が管理しやすいかもしれませんので、そちらをオススメします。</p>
+<section id="windows11winget">
+<h2>Windows11のwingetによるインストール<a class="headerlink" href="#windows11winget" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">winget</span></code> コマンドが使える環境であれば、管理者のPowerShell端末からコマンドで入れることができます。</p>
+<div class="highlight-ps1 notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Git</span><span class="p">.</span><span class="n">Git</span> <span class="n">-e</span> <span class="p">-</span><span class="n">-source</span> <span class="n">winget</span>
+</pre></div>
+</div>
+</section>
+<section id="macosbrew">
+<h2>macOSのbrewによるインストール<a class="headerlink" href="#macosbrew" title="Permalink to this headline">#</a></h2>
+<p>macOS利用者であれば普通に <code class="docutils literal notranslate"><span class="pre">brew</span></code> は導入していることでしょう。
+こちらでも普通にインストールできます。</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>brew<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="github-cli">
+<h1>オプショナル: GitHub CLIのインストール<a class="headerlink" href="#github-cli" title="Permalink to this headline">#</a></h1>
+<p>GitHubの操作をコマンドで行える<code class="docutils literal notranslate"><span class="pre">gh</span></code>コマンドを使いたい場合は、追加でインストールしておきましょう。</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cli.github.com/">GitHub CLI</a></p></li>
+</ul>
+<p>手順に沿って入れてもらえれば、 <code class="docutils literal notranslate"><span class="pre">gh</span></code>コマンドが利用可能になります。
+地味に便利です。</p>
 </section>
 
     <script type="text/x-thebe-config">
