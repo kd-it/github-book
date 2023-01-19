@@ -11,4 +11,4 @@ clean:
 	jupyter book clean .
 
 server:
-	sphinx-autobuild --deley 3 --open-browser . _build
+	sphinx-autobuild --delay 3 --open-browser . _build
