@@ -9,3 +9,4 @@ chapters:
   sections:
   - file: repo-create/explanation
   - file: repo-create/create
+- file: writing-guide/index
