@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>リポジトリを作ろう &#8212; GitHubガイド</title>
+    <title>ローカル環境での環境 &#8212; GitHubガイド</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="リポジトリとリモート名" href="explanation.html" />
-    <link rel="prev" title="GitHub 利用の準備" href="../setup/index.html" />
+    <link rel="next" title="VisualStudio CodeとDevContainerによる環境構築" href="vscode-dc.html" />
+    <link rel="prev" title="執筆者向けガイド" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,50 +119,50 @@ const thebe_selector_output = ".output, .cell_output"
    GitHub 利用の準備
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../repo-create/index.html">
    リポジトリを作ろう
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="explanation.html">
+    <a class="reference internal" href="../repo-create/explanation.html">
      リポジトリとリモート名
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="create.html">
+    <a class="reference internal" href="../repo-create/create.html">
      空のリモートリポジトリの作成
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../writing-guide/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    執筆者向けガイド
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../writing-guide/local.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      ローカル環境での環境
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing-guide/vscode-dc.html">
+    <a class="reference internal" href="vscode-dc.html">
      VisualStudio CodeとDevContainerによる環境構築
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing-guide/vscode-codespace.html">
+    <a class="reference internal" href="vscode-codespace.html">
      VisualStudio Codespacesでの開発
     </a>
    </li>
@@ -258,7 +258,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Frepo-create/index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwriting-guide/local.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -286,7 +286,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/repo-create/index.md"
+        <a href="../_sources/writing-guide/local.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,23 +323,80 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   環境構築
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   文書のフォーマット
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   自動ビルドとブラウザ連動
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>リポジトリを作ろう</h1>
+                <h1>ローカル環境での環境</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   環境構築
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   文書のフォーマット
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   自動ビルドとブラウザ連動
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -348,11 +405,48 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>リポジトリを作ろう<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
-<p>GitHubを使った開発を行うためには、今までのGitでの開発を一段階伸ばす必要があります。
-おそらく自分だけの利用という話であれば、自分のマシン上でリポジトリを生成して行っておりましたが、GitHubを使う以上、GitHub上にリポジトリが必要となります。このリポジトリ(=<strong>リモートリポジトリ</strong>)を作り、ローカルのリポジトリと同期を取りながら開発を進めていくことになります。</p>
-<div class="toctree-wrapper compound">
+<h1>ローカル環境での環境<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>ローカル環境で構築する場合、以下のものが必要となります。</p>
+<ul class="simple">
+<li><p>Python3(本原稿は3.10を使用しています)</p></li>
+<li><p>jupyter book</p></li>
+<li><p>Sphinx</p></li>
+<li><p>sphinx-autobuild</p></li>
+</ul>
+<p>文書の作成については方法を問わず共通ですのでここでは割愛します。</p>
+<section id="id2">
+<h2>環境構築<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>Python3をインストールしていることを前提として、必要なモジュールをセットアップしていきます。</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># SphinxはJupyter bookを入れるときに依存関係で入ります</span>
+%<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>jupyter-book<span class="w"> </span>sphinx-autobuild
+</pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">pipenv</span></code> を利用している方は、<code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span></code> でたぶん構築できます。</p>
+</section>
+<section id="id3">
+<h2>文書のフォーマット<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>文書のフォーマットは、Jupyter bookの機能で行います。</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>jupyter<span class="w"> </span>book<span class="w"> </span>build<span class="w"> </span>.
+</pre></div>
+</div>
+<p>面倒な人は GNU make が入っていれば</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>make<span class="w"> </span>build
+</pre></div>
+</div>
+<p>で行えます。
+成果物は <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> 以下にHTMLで置かれるので、ブラウザで開いてもらえれば確認できます。</p>
+</section>
+<section id="id4">
+<h2>自動ビルドとブラウザ連動<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<p>いちいちビルドを行うのが面倒であれば、 <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code> でCI環境を構築できます。</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>sphinx-autobuild<span class="w"> </span>--delay<span class="w"> </span><span class="m">3</span><span class="w"> </span>--open-browser<span class="w"> </span>.<span class="w"> </span>_build
+<span class="c1"># GNU makeが入っていれば簡略化可能</span>
+%<span class="w"> </span>make<span class="w"> </span>server
+</pre></div>
+</div>
+<p>いずれにしても、デフォルトでポート番号8000で簡易サーバーが起動するので、 <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> 以下で開くことができます。
+閲覧中にコードを書き換えた場合も、しばらくすると自動で作成され、ブラウザ側は自動的にリロードされて反映されます。</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -368,7 +462,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./repo-create"
+            path: "./writing-guide"
         },
         predefinedOutput: true
     }
@@ -382,17 +476,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../setup/index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">GitHub 利用の準備</p>
+            <p class="prev-next-title">執筆者向けガイド</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="explanation.html" title="next page">
+    <a class='right-next' id="next-link" href="vscode-dc.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">リポジトリとリモート名</p>
+        <p class="prev-next-title">VisualStudio CodeとDevContainerによる環境構築</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

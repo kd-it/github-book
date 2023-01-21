@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>リポジトリを作ろう &#8212; GitHubガイド</title>
+    <title>VisualStudio Codespacesでの開発 &#8212; GitHubガイド</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="リポジトリとリモート名" href="explanation.html" />
-    <link rel="prev" title="GitHub 利用の準備" href="../setup/index.html" />
+    <link rel="prev" title="VisualStudio CodeとDevContainerによる環境構築" href="vscode-dc.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,50 +118,50 @@ const thebe_selector_output = ".output, .cell_output"
    GitHub 利用の準備
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../repo-create/index.html">
    リポジトリを作ろう
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="explanation.html">
+    <a class="reference internal" href="../repo-create/explanation.html">
      リポジトリとリモート名
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="create.html">
+    <a class="reference internal" href="../repo-create/create.html">
      空のリモートリポジトリの作成
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../writing-guide/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    執筆者向けガイド
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing-guide/local.html">
+    <a class="reference internal" href="local.html">
      ローカル環境での環境
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing-guide/vscode-dc.html">
+    <a class="reference internal" href="vscode-dc.html">
      VisualStudio CodeとDevContainerによる環境構築
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../writing-guide/vscode-codespace.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      VisualStudio Codespacesでの開発
     </a>
    </li>
@@ -258,7 +257,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Frepo-create/index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwriting-guide/vscode-codespace.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -286,7 +285,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/repo-create/index.md"
+        <a href="../_sources/writing-guide/vscode-codespace.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,23 +322,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   ポートフォワード(マッピング)について
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   注意点
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>リポジトリを作ろう</h1>
+                <h1>VisualStudio Codespacesでの開発</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   ポートフォワード(マッピング)について
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   注意点
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -347,12 +393,55 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>リポジトリを作ろう<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
-<p>GitHubを使った開発を行うためには、今までのGitでの開発を一段階伸ばす必要があります。
-おそらく自分だけの利用という話であれば、自分のマシン上でリポジトリを生成して行っておりましたが、GitHubを使う以上、GitHub上にリポジトリが必要となります。このリポジトリ(=<strong>リモートリポジトリ</strong>)を作り、ローカルのリポジトリと同期を取りながら開発を進めていくことになります。</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="visualstudio-codespaces">
+<h1>VisualStudio Codespacesでの開発<a class="headerlink" href="#visualstudio-codespaces" title="Permalink to this headline">#</a></h1>
+<p>ブラウザだけあれば(細かい操作の違いはありますが)開発も可能です。
+Codespaceの初期設定は事前に行っておいてください。</p>
+<ol class="simple">
+<li><p>ブラウザでリポジトリを開きます</p></li>
+<li><p>Codespaceの起動を指示します
+<img alt="" src="../_images/01-create-codespace.png" /></p></li>
+<li><p>この際、ブラウザからローカルのVSCodeに引き継ごうとします(設定によっては自動的に繋がることもあります、そうしたい方はそれでもかまいませんが、この場合はローカルでのVSCodeの件に準じます)、ここではキャンセルしておきます
+<img alt="" src="../_images/02-open-in-app.png" /></p></li>
+<li><p>改めてCodespacesの項目を見ると、GitHub上のVMが構築されているので、3点ボタン(<code class="docutils literal notranslate"><span class="pre">…</span></code>)の部分にある <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">in</span> <span class="pre">→</span></code> にてブラウザからの起動を指示してください
+<img alt="" src="../_images/03-codespace-open-in-browser.png" /></p></li>
+<li><p>devcontainerの設定に従い、環境構築が行われ、ブラウザ上でVSCodeが開いて操作可能となります。</p></li>
+</ol>
+<section id="id1">
+<h2>ポートフォワード(マッピング)について<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>devcontainerの設定に基づいて動いているため、同様に自動ビルドが働いています。
+しかしながら、ローカル環境と異なり、自動的なポートマッピングは行われません。</p>
+<p>こちらについては、VSCode上の『ポート』にて、8000番を手動で追加することで、ローカルアドレスが生成されるので、そちらをブラウザで開いてもらえば同様に処理されます。</p>
+<ol class="simple">
+<li><p>『ポート』タブを開きます、以下の図では既に別のポートを開いている状態ですが、初期状態はおそらくなにもないと思います
+<img alt="" src="../_images/04-ports.png" /></p></li>
+<li><p>『ポートの追加』ボタンを押して、8000番を追加してください(書いてからEnterキー)
+<img alt="" src="../_images/05-addport.png" /></p></li>
+<li><p>ローカルアドレスが生成されるので、地球マーク(ブラウザ起動)を押すことでブラウザ上で開かれます(タブまたは新規ウィンドウ)
+<img alt="" src="../_images/06-result.png" /></p></li>
+</ol>
+<p>これでブラウザ上だけでも開発が可能です。</p>
+</section>
+<section id="id2">
+<h2>注意点<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>Codespacesは有料のサービスですが、<strong>無料枠</strong>があり、GitHubアカウントを持っていれば誰でも利用可能です。</p>
+<ul class="simple">
+<li><p>GitHubの無料アカウントであれば <strong>1ヶ月当たり120時間/コア</strong></p>
+<ul>
+<li><p>初期設定では2コアのVMが生成されるので、60時間が上限となります</p></li>
+</ul>
+</li>
+<li><p>有料アカウント/学生・教員向けProアカウントであれば <strong>1ヶ月あたり180時間/コア</strong></p></li>
+</ul>
+<p>接続のないVMは2時間程度(設定による)で自動的に閉じた状態(CPU利用が停止する)になり、未使用状態が14日(設定による)続くとVMは自動的に破棄されます。
+<strong>作業中のデータはVM破棄時に消滅する</strong>ので注意してください。</p>
+<p>また、ストレージ容量も月あたりの無料枠がありますが、本テキストの執筆において無料枠を超えるような事はおそらくないと思います。
+いずれにしても課金が発生し得る場合には事前に警告メッセージ(メール)があるのでそれを参考にしてください。</p>
+<p>詳細については、GitHub上のドキュメントを参考にしてください。</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.co.jp/features/codespaces">Codespaces | GitHub</a></p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -368,7 +457,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./repo-create"
+            path: "./writing-guide"
         },
         predefinedOutput: true
     }
@@ -382,19 +471,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../setup/index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="vscode-dc.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">GitHub 利用の準備</p>
+            <p class="prev-next-title">VisualStudio CodeとDevContainerによる環境構築</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="explanation.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">リポジトリとリモート名</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
