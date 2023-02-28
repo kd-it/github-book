@@ -13,7 +13,7 @@ chapters:
   - file: handson/push
   - file: handson/check
 
-- file: repo-create/index
-  sections:
-  - file: repo-create/explanation
-  - file: repo-create/create
+# - file: repo-create/index
+#   sections:
+#   - file: repo-create/explanation
+#   - file: repo-create/create
