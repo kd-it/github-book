@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>VisualStudio CodeとDevContainerによる環境構築 &#8212; GitHubガイド</title>
+    <title>上流へのプッシュ &#8212; GitHubガイド</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="リポジトリを眺めてみる" href="check.html" />
+    <link rel="prev" title="ファイルを置いてコミットしてみよう" href="commit.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -111,44 +113,44 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../setup/index.html">
    GitHub 利用の準備
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../handson/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    Git/GitHubのハンズオン
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/create.html">
+    <a class="reference internal" href="create.html">
      GitHub上でのリポジトリ作成
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/clone.html">
+    <a class="reference internal" href="clone.html">
      リポジトリのクローン
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/commit.html">
+    <a class="reference internal" href="commit.html">
      ファイルを置いてコミットしてみよう
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../handson/push.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      上流へのプッシュ
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/check.html">
+    <a class="reference internal" href="check.html">
      リポジトリを眺めてみる
     </a>
    </li>
@@ -244,7 +246,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwriting-guide/vscode-dc.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fhandson/push.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -272,7 +274,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/writing-guide/vscode-dc.md"
+        <a href="../_sources/handson/push.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -332,13 +334,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   環境構築
+  <a class="reference internal nav-link" href="#id2">
+   実際にプッシュしてみる
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   ビルド方法
+  <a class="reference internal nav-link" href="#id3">
+   もっとやってみよう
   </a>
  </li>
 </ul>
@@ -350,7 +352,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>VisualStudio CodeとDevContainerによる環境構築</h1>
+                <h1>上流へのプッシュ</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -361,13 +363,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   環境構築
+  <a class="reference internal nav-link" href="#id2">
+   実際にプッシュしてみる
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   ビルド方法
+  <a class="reference internal nav-link" href="#id3">
+   もっとやってみよう
   </a>
  </li>
 </ul>
@@ -380,21 +382,37 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="visualstudio-codedevcontainer">
-<h1>VisualStudio CodeとDevContainerによる環境構築<a class="headerlink" href="#visualstudio-codedevcontainer" title="Permalink to this headline">#</a></h1>
-<p>VisualStudio Code(VSCode)とDocker環境を持っていれば、DevContainerによる汚染の少ない環境で執筆が行えます。</p>
-<section id="id1">
-<h2>環境構築<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p>とりあえず一度VSCodeでCloneしたワークツリーを開いてください</p></li>
-<li><p>コマンドパレットで <code class="docutils literal notranslate"><span class="pre">Reopen</span> <span class="pre">in</span> <span class="pre">container</span></code> を指示してください</p></li>
-</ol>
-<p>これで環境構築を開始して、準備ができたらワークスペースを開き直します。</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>上流へのプッシュ<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>前の段階では、ローカルでのコミットを一度行った状態です。
+このコミットをクローン元(=上流)に送ることで、自分の変更をGitHub上に記録しておくことができます。
+GitHub上で共有開発している人たちにも、自分の変更を得ることができるようにもなります。
+この操作をプッシュ(push)と言います。</p>
 <section id="id2">
-<h2>ビルド方法<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p>あとは普通に文書を記述後、ローカル環境同様にビルドが可能ですが、コンテナ環境では自動的に <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code> が動くように設定しています。
-そのため、放っておいても自動的にビルドが行われ、その結果は <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> で確認できます。</p>
+<h2>実際にプッシュしてみる<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>それではプッシュ操作をしてみましょう。 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> で行えます。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">push</span>
+</pre></div>
+</div>
+<p><img alt="" src="../_images/push.png" /></p>
+<p>プッシュできると、自分のローカルでのコミットがGitHub側に送付され、半ば同期された状態となります。
+ブラウザで空のリポジトリ状態だったはずのページをリロードすると、作った <code class="docutils literal notranslate"><span class="pre">hello.txt</span></code> が出現し、クリックすれば中身も参照可能です。</p>
+<p><img alt="" src="../_images/hw-repo-reloaded.png" /></p>
+<p><img alt="" src="../_images/hw-view.png" /></p>
+</section>
+<section id="id3">
+<h2>もっとやってみよう<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">hello.txt</span></code> ファイル以外に適当なファイル(個人情報を入れないこと)を作成し、順次追加(<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>)してコミット(<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>)してみましょう。
+コミット処理の際、 <code class="docutils literal notranslate"><span class="pre">-m</span> <span class="pre">&quot;メッセージ&quot;</span></code> を忘れずに付けてください。作業自体が適当なため、メッセージが思いつきにくいと思います。
+今回は「〜を追加」などで十分です。</p>
+<p>この工程を、最低2度(最初のものとあわせて3回以上のコミット)を行ってみてください。
+もちろん一度追加しているファイルを書き換えて再度コミットしてもらってもかまいません。</p>
+<p><img alt="" src="../_images/add-foobar.png" />
+<code class="docutils literal notranslate"><span class="pre">foo.txt</span></code>と<code class="docutils literal notranslate"><span class="pre">bar.txt</span></code>を作成してコミット</p>
+<p>プッシュ作業は最後に一度行えば良いのですが、その前に一度 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>してみてください。</p>
+<p><img alt="" src="../_images/pre-push.png" /></p>
+<p>上流とローカルの間でコミット状態の相違がある場合、いくつ相違があるかが確認できます。
+概ねコミット回数ですが、厳密には違います(2回のコミットなのに3とか4とかいうことも普通におきます)。</p>
 </section>
 </section>
 
@@ -411,7 +429,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./writing-guide"
+            path: "./handson"
         },
         predefinedOutput: true
     }
@@ -425,6 +443,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="commit.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">ファイルを置いてコミットしてみよう</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="check.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">リポジトリを眺めてみる</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

@@ -118,8 +118,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="repo-create/index.html">
-   リポジトリを作ろう
+  <a class="reference internal" href="handson/index.html">
+   Git/GitHubのハンズオン
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -128,40 +128,28 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="repo-create/explanation.html">
-     リポジトリとリモート名
+    <a class="reference internal" href="handson/create.html">
+     GitHub上でのリポジトリ作成
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="repo-create/create.html">
-     空のリモートリポジトリの作成
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="writing-guide/index.html">
-   執筆者向けガイド
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="writing-guide/local.html">
-     ローカル環境での環境
+    <a class="reference internal" href="handson/clone.html">
+     リポジトリのクローン
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="writing-guide/vscode-dc.html">
-     VisualStudio CodeとDevContainerによる環境構築
+    <a class="reference internal" href="handson/commit.html">
+     ファイルを置いてコミットしてみよう
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="writing-guide/vscode-codespace.html">
-     VisualStudio Codespacesでの開発
+    <a class="reference internal" href="handson/push.html">
+     上流へのプッシュ
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="handson/check.html">
+     リポジトリを眺めてみる
     </a>
    </li>
   </ul>
@@ -363,7 +351,7 @@ mainブランチに上げると自動的にビルドが行われ、<a class="ref
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true

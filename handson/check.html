@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>VisualStudio CodeとDevContainerによる環境構築 &#8212; GitHubガイド</title>
+    <title>リポジトリを眺めてみる &#8212; GitHubガイド</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="上流へのプッシュ" href="push.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -111,44 +112,44 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../setup/index.html">
    GitHub 利用の準備
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../handson/index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
    Git/GitHubのハンズオン
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/create.html">
+    <a class="reference internal" href="create.html">
      GitHub上でのリポジトリ作成
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/clone.html">
+    <a class="reference internal" href="clone.html">
      リポジトリのクローン
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/commit.html">
+    <a class="reference internal" href="commit.html">
      ファイルを置いてコミットしてみよう
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../handson/push.html">
+    <a class="reference internal" href="push.html">
      上流へのプッシュ
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../handson/check.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      リポジトリを眺めてみる
     </a>
    </li>
@@ -244,7 +245,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwriting-guide/vscode-dc.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fhandson/check.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -272,7 +273,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/writing-guide/vscode-dc.md"
+        <a href="../_sources/handson/check.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -332,13 +333,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   環境構築
+  <a class="reference internal nav-link" href="#id2">
+   ログを見る
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   ビルド方法
+  <a class="reference internal nav-link" href="#id3">
+   変更点を知る
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   変更を巻き戻す
   </a>
  </li>
 </ul>
@@ -350,7 +356,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>VisualStudio CodeとDevContainerによる環境構築</h1>
+                <h1>リポジトリを眺めてみる</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -361,13 +367,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   環境構築
+  <a class="reference internal nav-link" href="#id2">
+   ログを見る
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   ビルド方法
+  <a class="reference internal nav-link" href="#id3">
+   変更点を知る
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   変更を巻き戻す
   </a>
  </li>
 </ul>
@@ -380,21 +391,91 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="visualstudio-codedevcontainer">
-<h1>VisualStudio CodeとDevContainerによる環境構築<a class="headerlink" href="#visualstudio-codedevcontainer" title="Permalink to this headline">#</a></h1>
-<p>VisualStudio Code(VSCode)とDocker環境を持っていれば、DevContainerによる汚染の少ない環境で執筆が行えます。</p>
-<section id="id1">
-<h2>環境構築<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p>とりあえず一度VSCodeでCloneしたワークツリーを開いてください</p></li>
-<li><p>コマンドパレットで <code class="docutils literal notranslate"><span class="pre">Reopen</span> <span class="pre">in</span> <span class="pre">container</span></code> を指示してください</p></li>
-</ol>
-<p>これで環境構築を開始して、準備ができたらワークスペースを開き直します。</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>リポジトリを眺めてみる<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>ここまででリポジトリにちょっとした操作を行ってもらいます。</p>
 <section id="id2">
-<h2>ビルド方法<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p>あとは普通に文書を記述後、ローカル環境同様にビルドが可能ですが、コンテナ環境では自動的に <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code> が動くように設定しています。
-そのため、放っておいても自動的にビルドが行われ、その結果は <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> で確認できます。</p>
+<h2>ログを見る<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>ここまでの変更がどのような流れで行われ、誰が手を入れたのかについては、 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>で確認できます。
+また、ブラウザ上でも確認できます。</p>
+<p>今回は最低3回はコミットしているのでログを見るとそれだけのコミットが発生しているはずです。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">log</span>
+</pre></div>
+</div>
+<p>ターミナルを占有する形でページャーが動いています。読み終わったら<code class="docutils literal notranslate"><span class="pre">q</span></code>キーで終了して上げてください。
+はみ出している場合はカーソルキー上下か<code class="docutils literal notranslate"><span class="pre">j</span></code>/<code class="docutils literal notranslate"><span class="pre">k</span></code>キーでスクロールできます。</p>
+<p><img alt="" src="../_images/git-log.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>よりグラフ指向の出力を見たい場合、 <code class="docutils literal notranslate"><span class="pre">--graph</span></code>オプションを付けると良いでしょう。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">log</span> <span class="p">-</span><span class="n">-graph</span>
+</pre></div>
+</div>
+<p><img alt="" src="../_images/git-log-graph.png" /></p>
+</div>
+<p>ログについては、ブラウザ上でもう少しきれいに見ることもできます。</p>
+<p><img alt="" src="../_images/commits-browser.png" /></p>
+<p><img alt="" src="../_images/graph-browser.png" /></p>
+<p>実際の開発では、多くの開発者が別で開発していた物を組み込むようなことも多いので、賑やかになったりもします。
+また、ブランチベースの開発をしている場合も賑やかになります。</p>
+<p><img alt="" src="../_images/tunny.png" /></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Jeffail/tunny/commits/master">Jeffail/tunny</a></p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>変更点を知る<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>全てのコミットは繋がっているため、あるコミットから別のコミットの間で、どのような変化が発生したのかを、<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>にて取得できます。</p>
+<p>例えば最新の状態(3回以上コミットしている)と、2つ前の状態で比較をしてみます。
+最新のコミット状態(厳密にはちょっと違う)は、 <strong>HEAD</strong> という名前で指すことができます。
+このHEADから2つ前という状態は、 <strong>HEAD^^</strong>(もしくは<strong>HEAD~2</strong>)で示せます。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="nb">diff </span><span class="n">HEAD</span><span class="p">^^..</span><span class="n">HEAD</span> <span class="c"># HEAD^^からHEADへの差分抽出</span>
+</pre></div>
+</div>
+<p><img alt="" src="../_images/diff-2.png" /></p>
+<p>この場合なにもないところ(<code class="docutils literal notranslate"><span class="pre">/dev/null</span></code>)からファイル<code class="docutils literal notranslate"><span class="pre">foo.txt</span></code>および<code class="docutils literal notranslate"><span class="pre">bar.txt</span></code>が生成されたことを示す差分(Uniffied Diff形式)が取得できています。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>1つ前のコミットからの差分(<code class="docutils literal notranslate"><span class="pre">HEAD^..HEAD</span></code>)も抽出してみましょう。
+先ほどと違う結果になると思われます。</p>
+</div>
+</section>
+<section id="id4">
+<h2>変更を巻き戻す<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<p>あるあるな話として、余計なコードを加えて挙動を悪くしてしまったというのがあると思います。
+gitにおけるコミットは、ある種の<strong>セーブポイント</strong>的要素であり、指定の状態に巻き戻すことや、未コミットの変更を破棄したりすることが可能です。
+ただこの操作を学ぶためには、コミットに対するブランチ(ラベル)を少しだけ知っておく必要があります。</p>
+<p>ブランチ(branch)は、コミットの繋がった一連の状態を指します。</p>
+<p><img alt="" src="../_images/branch.drawio.png" /></p>
+<p>基本的にブランチの最先端にラベルとしてのブランチ名がつきますし、同時に最後のコミット位置であるHEADというラベルも重なって付与されています。
+HEADの位置をずらすことで前の状態を取得することもできます。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">checkout</span> <span class="n">HEAD</span><span class="p">^</span> <span class="c"># ひとつ前に移動</span>
+</pre></div>
+</div>
+<p><img alt="" src="../_images/co-head-1.png" /></p>
+<p>前後でファイルが1つ減ったことが確認できます。</p>
+<p><img alt="" src="../_images/co-1.drawio.png" /></p>
+<p>ラベルとしてのmainはそのままmainブランチの先端を指しているので、checkoutしなおせば復帰できます。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span> <span class="c"># 復帰</span>
+</pre></div>
+</div>
+<p><img alt="" src="../_images/co-main.png" /></p>
+<p>比較の結果、コミット自体を取り消したいのであれば、<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">revert</span></code>を使うことで、コミットを打ち消すコミット(逆コミット)を発生させることでなかったことにできます。</p>
+<div class="highlight-pwsh notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">revert</span> <span class="c"># 最後のコミットをrevert</span>
+</pre></div>
+</div>
+<p>このとき、内蔵viが動くことがあるので操作に戸惑うかもしれませんが、キー入力でおちついて<code class="docutils literal notranslate"><span class="pre">:</span></code>→<code class="docutils literal notranslate"><span class="pre">q</span></code>→<code class="docutils literal notranslate"><span class="pre">Enterキー</span></code>で復帰できます。
+無事revertされると、打ち消しコミットが記録されます。</p>
+<p><img alt="" src="../_images/git-revert.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>重要なポイントとして <strong>打ち消しをするだけであり、過去のコミットの事実を消していない</strong> というところがあります。
+コミット自体を取り消すという方法が皆無ではないのですが、歴史の修正という行為になってしまうためあまり褒められたものではありません。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>特定のファイルだけ元に戻さないといけないケースもあるかもしれません、そういう時は、一度以前のコミットに戻って該当ファイルをコピーしておき、元に戻って書き換えて(上書きして)コミットするという方法もあったりします。少し邪悪な感じになりますが、現実的にはやりたくないけどやってしまうことがあります。</p>
+</div>
 </section>
 </section>
 
@@ -411,7 +492,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./writing-guide"
+            path: "./handson"
         },
         predefinedOutput: true
     }
@@ -425,6 +506,13 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="push.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">上流へのプッシュ</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
