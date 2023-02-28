@@ -5,6 +5,14 @@ format: jb-book
 root: intro
 chapters:
 - file: setup/index
+- file: handson/index
+  sections:
+  - file: handson/create
+  - file: handson/clone
+  - file: handson/commit
+  - file: handson/push
+  - file: handson/check
+
 - file: repo-create/index
   sections:
   - file: repo-create/explanation
